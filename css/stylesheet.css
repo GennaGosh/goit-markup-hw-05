@@ -191,11 +191,11 @@ img {
   border-radius: 4px;
 
 }
-/* .model-btn:hover,
+.model-btn:hover,
 .model-btn:focus {
-  background-color: #2196f3;
+  background-color: #188CE8;
   color: #ffffff;
-} */
+}
 /* SKILLS */
 .skils-list {
 padding-top: 94px;
@@ -527,6 +527,7 @@ margin-bottom: 30px;
   }
 
 /* -----PORTFOLIO----- */
+
 .section-projects {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -590,7 +591,9 @@ margin-bottom: 4px;
   flex-basis: calc(100%-90)/3);
   margin-top: 30px;
   margin-left: 30px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* position: relative; */
+
   
 }
 
@@ -610,8 +613,8 @@ margin-bottom: 4px;
 position: fixed;
 top: 0;
 left: 0;
-width: 100vw;
-height: 100vh;
+width: 100%;
+height: 100%;
 background-color: rgba(0, 0, 0, 0.2);
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -646,5 +649,22 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #0000001A;
   cursor: pointer;
 }
-
-
+.overlay {
+  position: absolute;
+  background-color: #2196F3E5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.projects-list-img {
+  position: relative;
+  overflow: hidden;
+}
+.projects-list:hover .overlay,
+.projects-list:focus .overlay {
+  transform: translateY(0%);
+}
