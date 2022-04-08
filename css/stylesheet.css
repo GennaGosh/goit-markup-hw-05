@@ -263,6 +263,10 @@ margin-right: 30px;
 width: 70px;
 height: 70px;
 }
+.description-list-registr {
+  position: relative;
+}
+
 /* ---------description ---------*/
 
 .description {
@@ -282,6 +286,24 @@ height: 70px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.description-list-registr {
+position: relative;
+width: 370px;
+height: 70px;
+bottom: 0px;
+background: rgba(47, 48, 58, 0.8);
+}
+.description-registr {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
 }
 /* --------Our team --------*/
 .team {
