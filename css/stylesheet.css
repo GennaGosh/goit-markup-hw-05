@@ -35,8 +35,6 @@ img {
 
 /* -----HEDER----- */
 .header {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ECECEC
 }
 .header-container {
@@ -596,7 +594,15 @@ margin-bottom: 30px;
   justify-content: center;
   margin-bottom: 50px;
 }
-
+.btn {
+  height: 38px;
+  width: 145px;
+  left: 712px;
+  top: 174px;
+  background: #F5F4FA;
+  border-radius: 4px;
+  
+}
 .item-btn {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -610,14 +616,15 @@ margin-bottom: 30px;
   
 }
 .btn:not(:last-child) {
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 
-.item-btn:hover,
+.btn .item-btn:hover,
 .item-btn:focus {
   background-color: #2196f3;
   color: #ffffff;
+  border-radius: 4px;
 }
 .projec-name {
   font-family: "Roboto", sans-serif;
